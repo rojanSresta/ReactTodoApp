@@ -5,9 +5,60 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(0, 0, 0, 0.589);
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+}
+
+#TodoText {
+  height: 1.9rem;
+  width: 13rem;
+  outline-color: chocolate;
+}
+
+#TodoAddBtn {
+  padding: 9px 21px;
+  margin-left: 5px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.TodoShowContainer {
+  background-color: rgba(7, 20, 22, 0.76);
+  margin-top: 1rem;
+  padding: 0.2em 0.7em;
+  display: flex;
+  flex-direction: column;
+}
+
+.TodoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deleteBtn {
+  background: transparent;
+  color: red;
+  height: 1.6rem;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
